@@ -1,0 +1,33 @@
+.histogram-container{
+	margin: auto;
+	width: 100%;
+	height: 100%;
+}
+.histogram-container svg{
+	overflow: visible !important;
+}
+
+.histogram-container .tick{
+	font-size: 0.8em;
+}
+.histogram-container .tag{
+	font-size: 0.5em;
+}
+.histogram-container .tag-y{
+	font-size: 0.7em;
+}
+@media (max-width: 768px){
+	.histogram-container .tick{
+		font-size: 0.5em;
+	}
+	.histogram-container .axisx .tick text{
+		/*transform-origin: center center;*/
+		transform: translate(2em,1em)rotate(45deg);
+	}
+	.histogram-container .tag{
+		font-size: 0.4em;
+	}
+	.histogram-container .tag-y{
+		font-size: 0.6em;
+	}
+}
